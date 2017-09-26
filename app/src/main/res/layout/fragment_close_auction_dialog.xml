@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.retrofit.mobile.fragment.CloseAuctionDialogFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вы уверены ?"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="28dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_dialog_close_auction_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Да"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+
+        <Button
+            android:id="@+id/btn_dialog_close_auction_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Нет"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

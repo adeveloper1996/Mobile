@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_anketa_seller">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:elevation="20dp"
+            android:translationZ="@dimen/dp_10"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/img_anketa_seller_personna"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@drawable/rounded_image"
+                android:src="@drawable/ic_person_white_24dp"/>
+
+            <TextView
+                android:id="@+id/txt_anketa_seller_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Имя/название орг."
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/img_anketa_seller_personna"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"/>
+
+            <TextView
+                android:id="@+id/txt_anketa_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Анкета посмотрена 2 раза"
+                android:textColor="@color/black"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/img_anketa_seller_personna"
+                android:layout_toEndOf="@+id/img_anketa_seller_personna"
+                android:layout_marginLeft="@dimen/dp_10"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/dp_20">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Телефоны"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dp_20"
+                android:layout_marginBottom="7dp" />
+
+            <TextView
+                android:id="@+id/txt_anketa_seller_phone1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+747 861 2496"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/txt_anketa_seller_phone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+775 984 77 58"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            android:layout_marginBottom="@dimen/dp_20"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E-mail"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_20"
+                        android:layout_marginBottom="7dp" />
+
+                    <TextView
+                        android:id="@+id/txt_anketa_seller_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="nurs.kz@mail.ru"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="end"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Город"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dp_20"
+                        android:layout_marginBottom="7dp" />
+
+                    <TextView
+                        android:id="@+id/txt_anketa_seller_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Алматы"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginBottom="@dimen/dp_20"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Адрес"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_20"
+                    android:layout_marginBottom="7dp" />
+
+                <TextView
+                    android:id="@+id/txt_anketa_seller_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KazNU, AL-Faraby-71"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_20"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_anketa_seller_pojal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button_white"
+                    android:text="Пожаловаться"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/blue"/>
+
+                <Button
+                    android:id="@+id/btn_anketa_seller_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button_white"
+                    android:text="заблокировать"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

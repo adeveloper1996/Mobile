@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/dp_30"
+    android:layout_marginRight="@dimen/dp_30"
+    tools:fragmentManager="marketmobile.project.kz.marketmobile.fragment.MobileSubCategoryFragment">
+
+    <Button
+        android:id="@+id/btn_radio_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="@dimen/dp_30"
+        android:onClick="onClickSubCat"/>
+    <Button
+        android:id="@+id/btn_prov_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="@dimen/dp_20"
+        android:onClick="onClickSubCat"/>
+    <Button
+        android:id="@+id/btn_ip_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="@dimen/dp_20"
+        android:onClick="onClickSubCat"/>
+
+</LinearLayout>

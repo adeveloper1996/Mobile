@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="45dp"
+    android:layout_marginLeft="45dp"
+    tools:fragmentManager="marketmobile.project.kz.marketmobile.fragment.SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="25dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <EditText
+            android:id="@+id/edit_sign_up_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:drawableLeft="@drawable/ic_account_circle_white_24dp"
+            android:hint="Имя"
+            android:textColorHint="@android:color/darker_gray"/>
+
+        <EditText
+            android:id="@+id/edit_sign_up_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:drawableLeft="@drawable/ic_lock_open_white_24dp"
+            android:hint="Пароль"
+            android:textColorHint="@android:color/darker_gray"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/edit_sign_up_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/yellow"
+            android:drawableLeft="@drawable/ic_code_white_24dp"
+            android:hint="Код 0000"
+            android:textColorHint="@android:color/darker_gray"
+            android:clickable="false"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_signup_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sign_up"
+        android:textColor="@color/yellow"
+        android:background="@drawable/rounded_button"
+        android:layout_marginBottom="25dp"/>
+
+</LinearLayout>

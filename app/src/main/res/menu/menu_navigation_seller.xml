@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single" android:id="@+id/group_nav1">
+    <item
+        android:id="@+id/menuRegistProduct"
+        android:title="Добваить товар"
+        android:orderInCategory="1"
+        android:icon="@drawable/do_order"/>
+
+    <item
+        android:id="@+id/menuMyTovar"
+        android:title="Мой товары"
+        android:orderInCategory="2"
+        android:icon="@drawable/ic_my_tovar"/>
+
+    <item
+        android:id="@+id/menuSms"
+        android:title="Сообщения"
+        android:orderInCategory="3"
+        android:icon="@drawable/my_sms"/>
+
+    <item
+        android:id="@+id/menuAdvert"
+        android:title="Объявление"
+        android:orderInCategory="4"
+        android:icon="@drawable/ic_advert"/>
+
+    <item
+        android:id="@+id/menuRequestBuyer"
+        android:title="Заявки покупателей"
+        android:orderInCategory="5"
+        android:icon="@drawable/request_buyer"/>
+
+    </group>
+
+    <group android:checkableBehavior="single" android:id="@+id/group_nav4">
+        <item
+            android:id="@+id/menuSetting"
+            android:title="Настройки"
+            android:orderInCategory="6"/>
+
+        <item
+            android:id="@+id/menuAboutApp"
+            android:title="О приложении"
+            android:orderInCategory="7"/>
+
+        <item
+            android:id="@+id/menuExit"
+            android:title="Выйти"
+            android:orderInCategory="8"/>
+    </group>
+</menu>

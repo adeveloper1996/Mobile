@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_add_advert"
+    android:scrollbars="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_add_advert">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true">
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:spinnerMode="dialog">
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spinner_mark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:spinnerMode="dialog">
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spinner_model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:spinnerMode="dialog">
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spinner_status_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog">
+        </Spinner>
+
+
+        <EditText
+            android:id="@+id/etxt_add_advert_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:inputType="number"
+            android:hint="Цена"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/cbox_dogovornaya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Договорная"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:buttonTint="@color/colorPrimaryDark"/>
+
+            <RadioButton
+                android:id="@+id/cbox_obmen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Обмен"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:buttonTint="@color/colorPrimaryDark"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etxt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:maxLength="5000"
+            android:hint="Описание"/>
+
+        <TextView
+            android:id="@+id/txt_length_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/5000"
+            android:textColor="@color/black"
+            android:layout_gravity="end"
+            android:textSize="8sp"/>
+
+        <EditText
+            android:id="@+id/etxt_add_advert_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:hint="e-mail"/>
+
+        <Spinner
+            android:id="@+id/spinner_add_advert_region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:layout_marginTop="@dimen/dp_5">
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/spinner_add_advert_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:layout_marginTop="@dimen/dp_5"
+            android:visibility="gone">
+        </Spinner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etxt_add_advert_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@null"
+                android:layout_weight="1"
+                android:hint="Адрес"/>
+
+            <Button
+                android:id="@+id/btn_add_advert_map"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/rounded_button"
+                android:text="карта"
+                android:layout_weight="5"
+                android:textColor="@color/colorAccent"
+                android:paddingLeft="@dimen/dp_5"
+                android:paddingRight="@dimen/dp_5"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etxt_add_advert_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@null"
+            android:hint="Тел: (777) 777 77 77"
+            android:inputType="phone"/>
+
+        <Button
+            android:id="@+id/btn_add_advert_galerey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Добавить фото"
+            android:textColor="@color/colorAccent"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_10"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/img_recycler_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:visibility="gone">
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/btn_advert_add_advert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:text="Подать объвление"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="@dimen/dp_5"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

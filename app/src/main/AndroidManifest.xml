@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.retrofit.mobile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.main.MainActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.ChangePasswordActivity"/>
+        <activity android:name=".activity.login_registr.LoginSignUp" />
+        <activity android:name=".activity.MarketMobileActivity" />
+        <activity android:name=".activity.ForgotPasswordActivity" />
+        <activity android:name=".activity.GuestActivity" />
+        <activity android:name=".activity.EditPersonalActivity" />
+        <activity
+            android:name=".activity.MakeOrderSubCategoryActivity"
+            android:label="@string/title_activity_make_order_sub_category"
+            android:parentActivityName=".activity.MarketMobileActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activity.OrderMarkActivity"
+            android:label="@string/title_activity_order_mark"
+            android:parentActivityName=".activity.MakeOrderSubCategoryActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.OrderTimeActivity" />
+        <activity android:name=".activity.OrderSelllerProductActivity" />
+        <activity android:name=".activity.AddAdvertActivity" />
+        <activity android:name=".activity.MyAdvertActivity" />
+        <activity android:name=".activity.AdvertActivity" />
+        <activity android:name=".activity.MyLovlelyActivity" />
+        <activity android:name=".activity.MessageActivity" />
+        <activity android:name=".activity.AdvertDetailsActivity" />
+        <activity android:name=".activity.AnketaSellerActivity" />
+        <activity android:name=".activity.ChatActivity"></activity>
+    </application>
+
+</manifest>

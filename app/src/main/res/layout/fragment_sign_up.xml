@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="45dp"
+    android:layout_marginLeft="45dp"
+    tools:fragmentManager="marketmobile.project.kz.marketmobile.fragment.SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="25dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <EditText
+            android:id="@+id/edit_sign_up_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_phone_white_24dp"
+            android:textColor="@color/yellow"
+            android:hint="Тел:(7XX)XXX-XX XX"
+            android:textColorHint="@color/gray"
+            android:inputType="phone"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_signup_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:textColor="@color/yellow"
+        android:background="@drawable/rounded_button"
+        android:layout_marginBottom="25dp"/>
+
+</LinearLayout>

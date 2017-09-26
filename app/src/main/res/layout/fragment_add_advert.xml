@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="@dimen/dp_30"
+    android:layout_marginRight="@dimen/dp_30"
+    tools:context="com.retrofit.mobile.fragment.AddAdvertFragment">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_add_advert"
+        android:background="@drawable/rounded_button"
+        android:text="Подать объявление"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:textColor="@color/colorAccent"
+        android:drawableRight="@drawable/img_plus"
+        android:paddingRight="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_show_advert"
+        android:background="@drawable/rounded_button"
+        android:text="Просмотр объявлений"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:textColor="@color/colorAccent"
+        android:drawableRight="@drawable/ic_eye_outline"
+        android:paddingRight="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_show_my_advert"
+        android:background="@drawable/rounded_button"
+        android:text="Мой объявление"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:textColor="@color/colorAccent"
+        android:drawableRight="@drawable/ic_script"
+        android:paddingRight="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_message_advert"
+        android:background="@drawable/rounded_button"
+        android:text="Сообщения"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:textColor="@color/colorAccent"
+        android:drawableRight="@drawable/ic_message_text_outline"
+        android:paddingRight="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_my_lovely_advert"
+        android:background="@drawable/rounded_button"
+        android:text="Избранное"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:textColor="@color/colorAccent"
+        android:drawableRight="@drawable/ic_heart_outline"
+        android:paddingRight="5dp" />
+
+
+
+
+</LinearLayout>

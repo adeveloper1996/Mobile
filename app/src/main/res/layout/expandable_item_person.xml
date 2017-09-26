@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:id="@+id/ll_child_my_order">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_my_order_name_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textColor="@color/black_87"
+                android:text="Apple"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="end">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Время торга"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="normal|bold"/>
+
+            <TextView
+                android:id="@+id/txt_my_order_time_of_auction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_87"
+                android:text="00:00:00"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Лучшие цены продавцов"
+        android:textSize="18sp"
+        android:textColor="@color/black_87"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:textStyle="normal|bold"/>
+
+    <LinearLayout
+        android:id="@+id/seller1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_5"
+        android:background="@android:color/holo_red_light">
+
+        <TextView
+            android:id="@+id/txt_my_order_price_seller1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250 000 тг"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textStyle="normal|bold"
+            android:textAllCaps="false"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_my_order_id_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID:7777"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_my_order_date_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="09.09.17"/>
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/img_avatar_seller"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_my_order_seller_anketa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_eye_outline"
+            android:textColor="@color/white"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seller2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@android:color/holo_green_light">
+
+        <TextView
+            android:id="@+id/txt_my_order_price_seller2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="230 000 тг"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textStyle="normal|bold"
+            android:textAllCaps="false"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_my_order_id_seller2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID:7777"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_my_order_date_seller2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="09.09.17"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_avatar_seller2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_my_order_seller_anketa2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_eye_outline"
+            android:textColor="@color/white"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seller3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@android:color/holo_blue_bright">
+
+        <TextView
+            android:id="@+id/txt_my_order_price_seller3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="250 000 тг"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textStyle="normal|bold"
+            android:textAllCaps="false"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_my_order_id_seller3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID:7777"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/txt_my_order_date_seller3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="09.09.17"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_avatar_seller3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_my_order_seller_anketa3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_eye_outline"
+            android:textColor="@color/white"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_my_order_not_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Пока заявок нет"
+        android:textColor="@color/colorBtnNotPress"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_my_order_show_all"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:background="@drawable/rounded_button"
+        android:padding="@dimen/dp_5"
+        android:text="Показать всех"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_20">
+
+
+        <Button
+            android:id="@+id/btn_close_auction_my_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="Закрыть торг"
+            android:textColor="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btn_setting_my_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:layout_marginRight="10dp"
+            android:text="Настройки"
+            android:layout_weight="1"
+            android:textColor="@color/colorAccent"/>
+    </LinearLayout>
+
+</LinearLayout>

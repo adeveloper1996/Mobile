@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#06a999</color>
+    <color name="colorPrimaryDark">#035651</color>
+    <color name="colorAccent">#ec9508</color>
+    <color name="colorBtnNotPress">#013d04</color>
+    <color name="action_bar_color">#FFED00</color>
+    <color name="blue_dead">#d4dcee</color>
+    <color name="blue_dead2">#8C000000</color>
+    <color name="red">#ff0724</color>
+    <color name="yellow">#FFED00</color>
+    <color name="gray">#9e9a9a</color>
+    <color name="black_87">#000000</color>
+    <color name="theme_search">#2196F3</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="back_item">#FF63ACD1</color>
+</resources>

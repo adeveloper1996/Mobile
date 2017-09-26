@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Mobile</string>
+    <string name="btn_login">вход</string>
+    <string name="btn_sign_up">регистрация</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_login_login">ВОЙТИ</string>
+    <string name="btn_login_guest">ГОСТЕВОЙ ВХОД</string>
+    <string name="choose_account">ВЫБЕРИТЕ ТИП АККАУНТА</string>
+    <string name="btn_buyer">ПОКУПАТЕЛЬ</string>
+    <string name="btn_seller">ПРОДАВЕЦ</string>
+    <string name="btn_signup_signup">ЗАРЕГИСТРИРОВАТЬСЯ</string>
+    <string name="open_drawer">Open drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string name="personal_area_phone">Телефон</string>
+    <string name="personal_area_addphone">Доп.телефон</string>
+    <string name="personal_area_email">Email</string>
+    <string name="personal_area_city">Город</string>
+    <string name="personal_area_address">Адрес</string>
+    <string name="map_personal_area">Карта</string>
+    <string name="loading">Загрузка...</string>
+    <string name="bayer_personal_area">ПОКУПАТЕЛЬ</string>
+    <string name="saller_personal_area">ПРОДАВЕЦ</string>
+    <string name="next">продолжить</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_make_order_sub_category">MakeOrderSubCategoryActivity</string>
+    <string name="title_activity_order_mark">OrderMarkActivity</string>
+    <string name="title_activity_order_time">OrderTimeActivity</string>
+    <string-array name="list_settings">
+        <item>Изменить пароль</item>
+        <item>Уведомление</item>
+        <item>Удалить учетную запись</item>
+    </string-array>
+</resources>
